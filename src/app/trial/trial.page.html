@@ -1,0 +1,111 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> trial</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="false">
+
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+
+    <li [ngbNavItem]="1">
+      <a ngbNavLink class="contest">Upcomming</a>
+      <ng-template ngbNavContent>
+
+        <div class="row  px-4">
+
+          <div class="col-md-6 p-3" [routerLink]="['/contest']">
+
+            <span class="time-left">07h 10m 27s left</span>
+
+            <div class="row justify-content-center pt-2">
+              <div class="col-6">
+                <h4 class="contest-name">StockPro</h4>
+                <p class="contest-description">unlimited stock orders</p>
+              </div>
+              <div class="col-6">
+                <h4 class="price">Price <span class="text-bold">₹ 2000</span></h4>
+                <h5 class="fee">Entry Fee <span class="text-bold">₹ 20</span></h5>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <button class="timing">
+                  10:30AM-4PM
+                </button>
+              </div>
+              <div class="col-6">
+                <p class="text-right m-0">
+                  <span class="spot">76 spots left</span>
+
+                  <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+      </ng-template>
+    </li>
+
+    <li [ngbNavItem]="2">
+      <a ngbNavLink class="contest">Live</a>
+      <ng-template ngbNavContent>
+
+        <div class="row  px-4">
+
+          <div class="col-md-6 p-3" [routerLink]="['/contest']">
+
+            <span class="time-left">07h 10m 27s left</span>
+
+            <div class="row justify-content-center pt-2">
+              <div class="col-6">
+                <h4 class="contest-name">StockPro</h4>
+                <p class="contest-description">unlimited stock orders</p>
+              </div>
+              <div class="col-6">
+                <h4 class="price">Price <span class="text-bold">₹ 2000</span></h4>
+                <h5 class="fee">Entry Fee <span class="text-bold">₹ 20</span></h5>
+              </div>
+            </div>
+
+
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <button class="timing">
+                  10:30AM-4PM
+                </button>
+              </div>
+              <div class="col-6">
+                <p class="text-right m-0">
+                  <span class="spot">76 spots left</span>
+
+                  <ngb-progressbar type="warning" [value]="75"></ngb-progressbar>
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+      </ng-template>
+    </li>
+  </ul>
+
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+</ion-content>

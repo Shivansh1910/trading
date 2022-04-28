@@ -1,0 +1,170 @@
+.balance {
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+
+color: #4F4F4F;
+
+}
+
+.balance-amount{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+
+text-align: right;
+
+color: #31C99B;
+}
+
+.back{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 26px;
+  background: #ffffff;
+  border-radius: 9.40351px;
+  vertical-align: middle;
+  color: #7879F1;
+}
+
+.text-right{
+  text-align: right !important;
+}
+
+.stocks{
+  padding-top: 12px;
+}
+
+.portfolio{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Poppins';
+  color: #5D5FEF;
+}
+
+.company{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+
+color: #4F4F4F;
+}
+
+.share{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+color: #BDBDBD;
+}
+
+.cmp{
+  
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+text-align: right;
+}
+
+.total{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+  color: #828282;
+  text-align: right;
+}
+
+.my-portfolio{
+  padding: 10px;
+}
+
+.search-stock{
+  width: 100%;
+  background: white;
+  border: 2px solid gray;
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+}
+
+.modify-section{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.modify{
+  width: 100%;
+  background: #7879F1;
+  color: white;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius:10px;
+}
+
+.modification{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #BDBDBD;
+
+}
+
+.exit{
+  color: #EB5757;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.3913px;
+  line-height: 26px;;
+  vertical-align: middle;
+  background: #FFFF;
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+}
+
+.exit-btn{
+  color: #EB5757;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.3913px;
+  line-height: 26px;;
+  vertical-align: middle;
+  background: #FFFF;
+  margin: 0;
+  text-align: right;
+  padding: auto;
+}
+
+.new-stock{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-align: right;
+color: #5D5FEF;
+}

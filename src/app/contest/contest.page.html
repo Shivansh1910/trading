@@ -1,0 +1,180 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> trial</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="false">
+
+  <div *ngIf="porticipated">
+    <section class="container-fluid pt-3 contest-section">
+      <div class="row">
+        <div class="col-6">
+          <button class="back">
+            <!-- <i class="fa-solid fa-arrow-left"></i> -->
+            <ion-icon name="arrow-back-outline" [routerLink]="['/trial']"></ion-icon>
+          </button>
+        </div>
+        <div class="col-6 text-right">
+          <button class="pool">
+            ₹ 200
+          </button>
+        </div>
+      </div>
+
+      <h4 class="name">StockPro</h4>
+      <p class="description">
+        unlimited stock orders
+      </p>
+
+      <div class="row" style="    padding-top: 25px;">
+        <div class="col-6">
+          <button class="time-left">
+            07h 10m 27s left
+          </button>
+        </div>
+        <div class="col-6 text-right">
+          <h4 class="price">Price <span class="text-bold">₹ 2000</span></h4>
+          <h5 class="fee">Entry Fee <span class="text-bold">₹ 20</span></h5>
+        </div>
+
+        <p class="description-time">
+          Starts at 10AM,
+          <br />
+          Ends at 11AM
+        </p>
+      </div>
+
+      <div class="rules">
+        <h5 class="play">How to Play ?</h5>
+
+        <p class="description-play">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic quos atque dolore consequuntur impedit
+          sequi
+          minima, voluptatum voluptatibus earum qui quam, voluptas laboriosam, dignissimos natus deserunt dolorum sunt
+          modi!
+        </p>
+
+        <p class="description-play">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic quos atque dolore consequuntur impedit
+          sequi
+          minima, voluptatum voluptatibus earum qui quam, voluptas laboriosam, dignissimos natus deserunt dolorum sunt
+          modi!
+        </p>
+
+        <p class="description-play">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic quos atque dolore consequuntur impedit
+          sequi
+          minima, voluptatum voluptatibus earum qui quam, voluptas laboriosam, dignissimos natus deserunt dolorum sunt
+          modi!
+        </p>
+      </div>
+
+    </section>
+
+    <div class="enter-contest">
+      <button class="enter-contest-btn" (click)="open()">
+        Enter Contest
+      </button>
+    </div>
+
+    <ng-template #myModal let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-title">Summary</h4>
+        <button type="button" class="btn-close" aria-label="Close button" aria-describedby="modal-title"
+          (click)="modal.dismiss('Cross click')"></button>
+      </div>
+      <div class="modal-body">
+        <!-- <p><strong><span class="text-primary">Summary</span></strong></p> -->
+
+        <div class="payment row justify-content-center px-2">
+
+
+
+          <div class="col-12 row justify-content-center pb-2">
+            <p class="refferal-id">Entry Fee: 400</p>
+            <div class="col-12">
+              <input class="refferal" placeholder="Refferal Id (optional)" type="text">
+            </div>
+            <!-- <div class="col-4">
+              <button class="verify">Verify</button>
+            </div> -->
+          </div>
+
+          <!-- <div class="row border-2">
+            <div class="col-6">
+              <div class="wallet-balance border-right">
+                Wallet Balance
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="wallet-balance">
+                00
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row border-2">
+            <div class="col-6">
+              <div class="wallet-balance border-right">
+                Entry fee
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="wallet-balance">
+                00
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="row border-2">
+            <div class="col-6">
+              <div class="wallet-balance border-right">
+                Coupon
+                <span class="coupon">(NEW)</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="wallet-balance">
+                00
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row border-2">
+            <div class="col-6">
+              <div class="wallet-balance border-right">
+                Amount to be Added
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="wallet-balance">
+                00
+              </div>
+            </div>
+
+          </div> -->
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" (click)="modal.dismiss('cancel click')">Cancel</button>
+        <button type="button" ngbAutofocus class="btn" style="background-color: #7879F1; color: #fff; font-weight: 400;
+          font-family: 'Poppins';" (click)="modal.close('Ok click')">Make
+          Payment</button>
+        <!-- <button type="button" ngbAutofocus class="btn btn-danger" (click)="modal.close('Ok click')">Continue</button> -->
+      </div>
+    </ng-template>
+  </div>
+
+  <app-portfolio></app-portfolio>
+
+</ion-content>

@@ -1,0 +1,240 @@
+<section class="container-fluid pt-3 contest-section" style="margin-bottom: 55px;">
+  <div class="row">
+    <div class="col-6">
+      <div style="padding-top: 8px;" [routerLink]="['/trial']">
+        <button class="back">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+    <div class="col-6 text-right">
+      <!-- <button class="pool">
+   ₹ 200
+ </button> -->
+      <p class="m-0 balance">Balance Left</p>
+      <p class="m-0 balance-amount">₹ 1,00,500.7</p>
+    </div>
+  </div>
+
+
+  <div class="stocks">
+    <h4 class="head">Selected Stocks (6/7)</h4>
+    <div class="row justify-content-center">
+      <div class="col-md-6 row justify-content-center py-2">
+        <div class="col-6">
+          <p class="name">Reliance Industries</p>
+          <p class="cmp">₹ 2,319.75</p>
+          <p class="change">5.75(0.25%)</p>
+        </div>
+        <div class="col-3 px-0">
+          <svg viewBox="100 0 100 100" class="chart" height="50" width="100%">
+            <polyline fill="none" stroke="#EB5757" stroke-width="2" [attr.points]="tri" />
+          </svg>
+        </div>
+        <div class="col-3">
+          <span class="buy-sell" style="color:#EB5757">SHORTSELL <ion-icon name="ellipse"></ion-icon></span>
+          <!-- <span class="buy-sell">BUY <ion-icon name="ellipse"></ion-icon></span> -->
+
+          <div class="wrapper">
+            <button class="plusminus" (click)="handleMinus()">-</button>
+            <input type="number" class="num" value="0" [(ngModel)]="value" />
+            <button class="plusminus" (click)="handlePlus()">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 row justify-content-center py-2">
+        <div class="col-6">
+          <p class="name">Reliance Industries</p>
+          <p class="cmp">₹ 2,319.75</p>
+          <p class="change">5.75(0.25%)</p>
+        </div>
+        <div class="col-3 px-0">
+          <svg viewBox="100 0 100 100" class="chart" height="50" width="100%">
+            <polyline fill="none" stroke="#EB5757" stroke-width="2" [attr.points]="tri" />
+          </svg>
+        </div>
+        <div class="col-3">
+          <span class="buy-sell" style="color:#EB5757">SHORTSELL <ion-icon name="ellipse"></ion-icon></span>
+          <!-- <span class="buy-sell">BUY <ion-icon name="ellipse"></ion-icon></span> -->
+
+          <div class="wrapper">
+            <button class="plusminus" (click)="handleMinus()">-</button>
+            <input type="number" class="num" value="0" [(ngModel)]="value" />
+            <button class="plusminus" (click)="handlePlus()">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 row justify-content-center py-2">
+        <div class="col-6">
+          <p class="name">Reliance Industries</p>
+          <p class="cmp">₹ 2,319.75</p>
+          <p class="change">5.75(0.25%)</p>
+        </div>
+        <div class="col-3 px-0">
+          <svg viewBox="100 0 100 100" class="chart" height="50" width="100%">
+            <polyline fill="none" stroke="#EB5757" stroke-width="2" [attr.points]="tri" />
+          </svg>
+        </div>
+        <div class="col-3">
+          <span class="buy-sell" style="color:#EB5757">SHORTSELL <ion-icon name="ellipse"></ion-icon></span>
+          <!-- <span class="buy-sell">BUY <ion-icon name="ellipse"></ion-icon></span> -->
+
+          <div class="wrapper">
+            <button class="plusminus" (click)="handleMinus()">-</button>
+            <input type="number" class="num" value="0" [(ngModel)]="value" />
+            <button class="plusminus" (click)="handlePlus()">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h4 class="head">Available Stocks</h4>
+    <div class="row justify-content-center">
+      <div class="col-md-6 row justify-content-center py-2">
+        <div class="col-6">
+          <p class="name">Reliance Industries</p>
+          <p class="cmp">₹ 2,319.75</p>
+          <p class="change">5.75(0.25%)</p>
+        </div>
+        <div class="col-3 px-0">
+          <svg viewBox="100 0 100 100" class="chart" height="50" width="100%">
+            <polyline fill="none" stroke="#EB5757" stroke-width="2" [attr.points]="tri" />
+          </svg>
+        </div>
+        <div class="col-3">
+          <button class="select" (click)="open()">Select</button>
+        </div>
+      </div>
+      <div class="col-md-6 row justify-content-center py-2">
+        <div class="col-6">
+          <p class="name">Reliance Industries</p>
+          <p class="cmp">₹ 2,319.75</p>
+          <p class="change">5.75(0.25%)</p>
+        </div>
+        <div class="col-3 px-0">
+          <svg viewBox="100 0 100 100" class="chart" height="50" width="100%">
+            <polyline fill="none" stroke="#EB5757" stroke-width="2" [attr.points]="tri" />
+          </svg>
+        </div>
+        <div class="col-3">
+          <button class="select" (click)="open()">Select</button>
+        </div>
+      </div>
+      <div class="col-md-6 row justify-content-center py-2">
+        <div class="col-6">
+          <p class="name">Reliance Industries</p>
+          <p class="cmp">₹ 2,319.75</p>
+          <p class="change">5.75(0.25%)</p>
+        </div>
+        <div class="col-3 px-0">
+          <svg viewBox="100 0 100 100" class="chart" height="50" width="100%">
+            <polyline fill="none" stroke="#EB5757" stroke-width="2" [attr.points]="tri" />
+          </svg>
+        </div>
+        <div class="col-3">
+          <button class="select" (click)="open()">Select</button>
+        </div>
+      </div>
+    </div>
+
+
+    <ng-template #myModal let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-title">Summary</h4>
+        <button type="button" class="btn-close" aria-label="Close button" aria-describedby="modal-title"
+          (click)="modal.dismiss('Cross click')"></button>
+      </div>
+      <div class="modal-body" style="    padding-top: 0;">
+        <p class="m-0"><strong><span class="text-primary">Company name</span></strong></p>
+        <div class="payment row justify-content-center px-2">
+
+          <div>
+
+            <div class="row order py-2">
+              <div class="col-6">
+                Order: {{buysell}}
+              </div>
+              <div class="col-6 text-center">
+                <div class="btn-group" role="group">
+                  <input type="radio" [(ngModel)]="buysell" value="Buy" class="btn-check" id="btnradio1"
+                    autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio1">Buy</label>
+
+                  <input type="radio" [(ngModel)]="buysell" value="ShortSell" class="btn-check" id="btnradio2"
+                    autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio2">ShortSell</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row order-type py-2">
+              <div class="col-6">
+                Order Type: {{ordertype}}
+              </div>
+              <div class="col-6 text-center">
+                <div class="btn-group1" role="group">
+                  <input type="radio" [(ngModel)]="ordertype" value="Market" class="btn-check1" id="btnradio3"
+                    autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio3">Market</label>
+
+                  <input type="radio" [(ngModel)]="ordertype" value="Limit" class="btn-check1" id="btnradio4"
+                    autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio4">Limit</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center stats py-2">
+              <div class="col-6">
+                <input type="text" class="w-100" placeholder="Quantity">
+              </div>
+              <div class="col-6">
+                <input type="text" class="w-100" placeholder="Price">
+                <!-- <input type="text" placeholder="Price" disabled> -->
+              </div>
+            </div>
+            <!-- 
+            <div class="row">
+              <div class="btn-group" role="group">
+                <input type="radio" [(ngModel)]="advance" value="regular" class="btn-check" id="btnradio5"
+                  autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio5">Regular</label>
+
+                <input type="radio" [(ngModel)]="advance" value="bracket" class="btn-check" id="btnradio6"
+                  autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio6">Bracket Order</label>
+              </div>
+
+
+            </div> -->
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" (click)="modal.dismiss('cancel click')">Cancel</button>
+        <button type="button" ngbAutofocus class="btn btn-danger" (click)="modal.close('Ok click')">Continue</button>
+      </div>
+    </ng-template>
+
+
+  </div>
+</section>
+
+<div class="modify-section">
+  <button class="modify" style="background:white; color: #7879F1" (click)="cancel()" [routerLink]="['/contest']">
+    <ion-icon name="create-outline"></ion-icon>
+    Reset
+  </button>
+
+  <button class="modify" (click)="save()">
+    <ion-icon name="create-outline"></ion-icon>
+    Save
+  </button>
+
+</div>

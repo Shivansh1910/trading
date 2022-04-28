@@ -1,0 +1,125 @@
+<div *ngIf="!addStock">
+  <section class="container-fluid pt-3 contest-section">
+    <div class="row">
+      <div class="col-6">
+        <div style="padding-top: 8px;" [routerLink]="['/trial']">
+          <button class="back">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </button>
+          <span class="portfolio">Portfolio</span>
+        </div>
+      </div>
+      <div class="col-6 text-right">
+        <!-- <button class="pool">
+          ₹ 200
+        </button> -->
+        <p class="m-0 balance">Total Balance</p>
+        <p class="m-0 balance-amount">₹ 1,00,500.7</p>
+      </div>
+    </div>
+
+    <div class="stocks">
+      <input type="text" class="search-stock" placeholder="Company script">
+      <div class="row justify-content-center pt-3">
+
+        <div class="col-md-6 my-portfolio">
+
+          <div class=" row" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample">
+            <div class="col-8">
+              <p class="m-0 company">Reliance</p>
+              <p class="m-0 share">10 shares</p>
+            </div>
+            <div class="col-4">
+              <p class="m-0 cmp">
+                <!-- <span style="color: #31C99B;"> ₹ 2,3500</span> -->
+                <span style="color: #EB5757;"> ₹ 2,3500</span>
+              </p>
+              <p class="m-0 total">₹ 2,3190.75</p>
+
+
+            </div>
+          </div>
+
+          <p (click)="exit()" class="exit-btn" *ngIf="modify">
+            <button class="exit">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            Exit
+          </p>
+
+          <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+            <div class="card">
+              <div class="card-body">
+                You can collapse this card by clicking Toggle
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-6 my-portfolio">
+
+          <div class=" row" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample">
+            <div class="col-8">
+              <p class="m-0 company">Reliance</p>
+              <p class="m-0 share">10 shares</p>
+            </div>
+            <div class="col-4">
+              <p class="m-0 cmp">
+                <!-- <span style="color: #31C99B;"> ₹ 2,3500</span> -->
+                <span style="color: #EB5757;"> ₹ 2,3500</span>
+              </p>
+              <p class="m-0 total">₹ 2,3190.75</p>
+
+
+            </div>
+          </div>
+
+          <p (click)="exit()" class="exit-btn" *ngIf="modify">
+            <button class="exit">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            Exit
+          </p>
+
+          <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+            <div class="card">
+              <div class="card-body">
+                You can collapse this card by clicking Toggle
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <p class="new-stock m-0" *ngIf="modify" (click)="addstock()">
+        Buy new stocks
+      </p>
+    </div>
+
+
+
+
+  </section>
+  <div class="modify-section">
+    <p class="m-0 modification">
+      6 modifications left
+    </p>
+    <button class="modify" (click)="modifyFunction()" *ngIf="!modify">
+      <ion-icon name="create-outline"></ion-icon>
+      Modify Portfolio
+    </button>
+
+    <button class="modify" (click)="savemodify()" *ngIf="modify">
+      <ion-icon name="create-outline"></ion-icon>
+      Save
+    </button>
+
+  </div>
+</div>
+
+<app-add-portfolio *ngIf="addStock"></app-add-portfolio>
